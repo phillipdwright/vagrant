@@ -24,7 +24,7 @@ The main functionality of this command is exposed via even more subcommands:
 * [`repackage`](#box-repackage)
 * [`update`](#box-update)
 
-# Box Add
+# Box Add<a name="box-add"></a>
 
 **Command: `vagrant box add ADDRESS`**
 
@@ -104,13 +104,13 @@ you are not using a catalog).
   of the box. The metadata itself is served over TLS and its format is validated.
 </div>
 
-# Box List
+# Box List<a name="box-list"></a>
 
 **Command: `vagrant box list`**
 
 This command lists all the boxes that are installed into Vagrant.
 
-# Box Outdated
+# Box Outdated<a name="box-outdated"></a>
 
 **Command: `vagrant box outdated`**
 
@@ -126,7 +126,7 @@ a box. This generally requires an internet connection.
 * `--global` - Check for updates for all installed boxes, not just the
   boxes for the current Vagrant environment.
 
-# Box Prune
+# Box Prune<a name="box-prune"></a>
 
 **Command: `vagrant box prune`**
 
@@ -142,7 +142,7 @@ This command removes old versions of installed boxes. If the box in currently in
 
 * `--force` - Destroy without confirmation even when box is in use.
 
-# Box Remove
+# Box Remove<a name="box-remove"></a>
 
 **Command: `vagrant box remove NAME`**
 
@@ -167,7 +167,7 @@ with the `--all` flag.
   name. This is only required if a box is backed by multiple providers.
   If there is only a single provider, Vagrant will default to removing it.
 
-# Box Repackage
+# Box Repackage<a name="box-repackage"></a>
 
 **Command: `vagrant box repackage NAME PROVIDER VERSION`**
 
@@ -179,7 +179,7 @@ When you add a box, Vagrant unpacks it and stores it internally. The
 original `*.box` file is not preserved. This command is useful for
 reclaiming a `*.box` file from an installed Vagrant box.
 
-# Box Update
+# Box Update<a name="box-update"></a>
 
 **Command: `vagrant box update`**
 
